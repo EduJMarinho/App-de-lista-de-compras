@@ -12,21 +12,37 @@
   <title>App Lista de compras</title>
 
   <link rel="stylesheet" href="index.css">
-
 </head>
 <body >
-  <header class="items-center">
-    
-  <img src="assets/logo.svg" alt="">
+  <section>
+  <header>
 
-  <img src="assets/link button-voltar.svg" alt="">
+    <div class="logo flex items-center">
+      <img  src="assets/logo.svg" alt="">
+    </div>
 
-  <h1>Compras da semana</h1>
+    <div class="part-two gap1">
+      <img src="assets/link button-voltar.svg" alt="">
+      <h1>Compras da semana</h1>
+    </div>
+  </header>
 
-</header>
+  <form>
+      <div class="add-item flex">  
+        <label for="item"></label>
+        <input type="text" name="item" id="item" placeholder="Adicione um novo item" required />
+
+        <button id="item-add">Adicionar item</button>
+      </div>
+
+  </form>
 
 
+
+
+</section>
 
  <script src="./script.js"></script>
+ 
 </body>
 </html>

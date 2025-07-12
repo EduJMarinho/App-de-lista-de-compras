@@ -1,3 +1,24 @@
+section {
+  width: 39.2rem;
+  padding: 2rem; 
+  display: inline-block;   
+}
+
 header {
-  padding-top: 1.6rem;
+  & h1 {
+    font: var(--title);
+  }
+
+  .part-two {
+    display: grid;
+   margin-top: 3.5rem;
+   }
+}
+
+@media screen and (max-width: 24rem){
+  header {  
+  & .part-two {
+   margin-top: 1rem;
+     }}
+    
 }
