@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {  
+  /* background */
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
+
+  /* cores da base  */
+  --color-brand: #CA3884;
+  --color-brand-hover:#A52C6B;
+  --color-danger: #C93847;
+
+   /* conteudo */
+  --content-primary: #080B12;
+  --content-secondary:#374151;
+  --content-tertiary:#9CA3AF;
+
+    /* bordas */
+  --always-white:#FFFFFF;
+  --border-primary:#D1D5DB;
+  --border-hover:#B9C2D0;
+  
+    /* fontes */
+  --ff-base: 'Inter', sans-serif;
+
+  --title: 800 1.5rem var(--ff-base);
+  --label: 600 1rem var(--ff-base);
+  --paragraph: 500 1rem var(--ff-base); 
+  --link: 500 .875rem  var(--ff-base);  
+}
+
+body {
+  background-color: var(--background-primary);  
+}

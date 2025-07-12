@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.gap-12px {
+  gap: .75rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.items-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lh32 {
+line-height: 2rem;
+}
+
+.lh20 {
+  line-height: 1.25rem;
+}
+
+.lh16 {
+  line-height: 1rem;
+}
+
+ @media(width >= 80em) {
+    .container {
+     --max-width: 80em;
+    }
+  }
