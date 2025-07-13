@@ -33,13 +33,6 @@
   --link: 500 .875rem  var(--ff-base);  
 }
 
-body {
-  background-color: var(--background-primary);   
-  justify-content: center;
-  display: flex;
-  align-items: center;    
-}
-
 /* Estilo para navegadores baseados em WebKit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
   width: .001rem; 
@@ -58,5 +51,16 @@ body {
 body {
   scrollbar-width: thin; /* "auto", "thin" ou "none" */
   scrollbar-color: var(--border-primary) transparent;
+
+  background-color: var(--background-primary);   
+  justify-content: center;
+  display: flex;
+  align-items: center;  
 }
 
+/* Garante que mesmo em modo escuro, mantenha claro */
+@media (prefers-color-scheme: dark) {
+  body {
+   background-color: var(--background-primary);      
+  }
+}
