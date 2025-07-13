@@ -60,7 +60,11 @@ body {
 
 /* Garante que mesmo em modo escuro, mantenha claro */
 @media (prefers-color-scheme: dark) {
+  * {
+    color-scheme: light !important;  }
+
   body {
-   background-color: #F4F5FB;;      
+    background-color: #F4F5FB !important;
   }
 }
+

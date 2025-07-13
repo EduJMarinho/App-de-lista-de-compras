@@ -37,6 +37,7 @@ border: .2rem solid var(--border-primary);
   transition: background-image 0.3s ease;
   background-color: var(--background-secondary);
   margin-left: auto;
+  border-radius: .6rem;
 }
 
 .delete-button:hover {
@@ -50,7 +51,8 @@ background-image: url(../assets/lixeira-hover.png);
   border: none;
   cursor: pointer;
   transition: background-image 0.3s ease;
-  background-color: var(--background-secondary);  
+  background-color: var(--background-secondary); 
+   border-radius: .6rem; 
 }
 
 .click-button:checked {
@@ -67,7 +69,7 @@ background-image: url(../assets/click-selected.svg);
   color: var(--always-white);    
   border-radius: .5rem;
   padding: .6rem;
-  margin-top: 1.85rem;  
+  margin-top: 1rem;  
   border: none;  
   align-items: center;
   justify-content: space-between;     
