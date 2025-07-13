@@ -26,7 +26,7 @@ function newTask() {
  input.value = ''
   }
 
-  function showValues() {
+function showValues() {
   let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
   let list = document.getElementById('to-list')
 
