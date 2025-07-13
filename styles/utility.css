@@ -18,25 +18,9 @@
   gap: 1.35rem;
 }
 
-.desktop-only {
-  display: none;
-}
-
 .items-center {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.lh32 {
-line-height: 2rem;
-}
-
-.lh20 {
-  line-height: 1.25rem;
-}
-
-.lh16 {
-  line-height: 1rem;
 }
 

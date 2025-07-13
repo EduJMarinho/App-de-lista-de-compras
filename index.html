@@ -18,11 +18,11 @@
   <header>
 
     <div class="logo flex items-center">
-      <img  src="assets/logo.svg" alt="">
+      <img  src="assets/logo.svg" alt="Logo QuickList">
     </div>
 
     <div class="part-two gap1">
-      <img src="assets/link button-voltar.svg" alt="">
+      <img id="scroll-to-top" class="topo" src="assets/link button-voltar.svg" alt="Voltar ao topo" >
       <h1>Compras da semana</h1>
     </div>
   </header>
@@ -30,19 +30,24 @@
   <form>
       <div class="add-item flex">  
         <label for="item"></label>
-        <input type="text" name="item" id="item" placeholder="Adicione um novo item" required />
+        <input  type="text" id="input-item" placeholder="Adicione um novo item"/>
 
-        <button id="item-add">Adicionar item</button>
+        <button onclick="newTask()" id="item-add" title="Clique para adicionar o produto">Adicionar item</button>
+      </div>      
+
+      <div class="content flex">  
+      <ul id="to-list"></ul>
+      </div>
+     
+      <div id="footer">
+        <img src="assets/Alert.svg" alt="">
+      <p id="item-delete">O item foi removido da lista</p>
+      <img src="assets/x.svg" alt="">
       </div>
 
   </form>
-
-
-
-
 </section>
 
- <script src="./script.js"></script>
- 
+ <script src="./script.js"></script> 
 </body>
 </html>

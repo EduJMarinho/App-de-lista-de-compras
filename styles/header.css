@@ -3,7 +3,10 @@ section {
   padding: 2rem; 
   display: inline-block;   
 }
-
+ .topo {
+  cursor: pointer;
+ }
+ 
 header {
   & h1 {
     font: var(--title);

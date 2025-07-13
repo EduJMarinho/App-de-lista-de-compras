@@ -38,6 +38,26 @@ body {
   background-color: var(--background-primary);   
   justify-content: center;
   display: flex;
-  align-items: center;  
-  overflow: hidden;
+  align-items: center;    
 }
+
+/* Estilo para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: .001rem; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-primary); 
+  border-radius: 0.001rem;
+}
+
+/* Estilo para navegador Firefox) */
+body {
+  scrollbar-width: thin; /* "auto", "thin" ou "none" */
+  scrollbar-color: var(--border-primary) transparent;
+}
+
