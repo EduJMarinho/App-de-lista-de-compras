@@ -34,7 +34,7 @@ function showValues() {
 
   for (let i = 0; i < values.length; i++) {
     const icon = values[i].checked
-      ? 'assets/click-Selected.svg'
+      ? 'assets/click-selected.svg'
       : 'assets/click-Default.svg'
 
     list.innerHTML += `

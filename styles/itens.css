@@ -54,7 +54,7 @@ background-image: url(../assets/lixeira-hover.png);
 }
 
 .click-button:checked {
-background-image: url(../assets/click-Selected.svg);
+background-image: url(../assets/click-selected.svg);
 }
 
 #footer {
