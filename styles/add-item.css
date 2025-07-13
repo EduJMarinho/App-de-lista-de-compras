@@ -1,5 +1,5 @@
-.add-item { 
-  margin-top: 2.75rem; 
+  .add-item { 
+    margin-top: 2.75rem; 
 
    & input {
       width: 28.2rem;
@@ -10,7 +10,7 @@
       border-radius: .5rem;
       padding-left: 1rem;
       border: .2rem solid var(--border-primary);
-  }
+      }
 
   & button {
     margin-left: 1rem;
@@ -23,8 +23,8 @@
     font: var(--link);    
     transition: .4s;
     cursor: pointer;
+    }
   }
-}
 
 #item-add:hover {
   background-color: var(--color-brand-hover);
@@ -40,12 +40,12 @@
       width: 326px;
       margin: 0;   
       margin-bottom: .5rem;
-  }
+    }
 
   & button {
     margin: 0;
     width: 326px;    
   }
-}
-}
+  }
+  }
 

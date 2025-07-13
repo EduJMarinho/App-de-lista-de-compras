@@ -1,10 +1,10 @@
 const localStorageKey = 'to-list-gn'
 
 function validadeIfExistNewTask() {
-  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
   let inputValue = document.getElementById('input-item').value
-  let exits = values.find(x => x.name == inputValue)
-  return exits ? true : false
+  let exists = values.find(x => x.name === inputValue)
+  return !!exists
 }
 
 function newTask() {
@@ -15,58 +15,86 @@ function newTask() {
     input.style.border = '1px solid red'
     alert('Digite o produto para inserir na sua lista')
   } else if (validadeIfExistNewTask()) {
-    alert('já existe um item assim')
+    alert('Já existe um item assim')
   } else {
-    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
-    values.push({ name: input.value })
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
+    values.push({ name: input.value, checked: false }) // 👈 adiciona estado de seleção
     localStorage.setItem(localStorageKey, JSON.stringify(values))
     showValues()
   }
 
-  input.value = ''
-}
+ input.value = ''
+  }
 
-function showValues() {
-  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
+  function showValues() {
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
   let list = document.getElementById('to-list')
 
-  list.innerHTML = ''  
+  list.innerHTML = ''
 
-  for (let i = 0; i < values.length; i++) {
+    for (let i = 0; i < values.length; i++) {
+    const icon = values[i].checked ? 'assets/click-Selected.svg' : 'assets/click-Default.svg'
+
     list.innerHTML += `
       <li>
-        <button type="check" id="click-button"><img src="assets/click-Default.svg"></button>
+        <button class="click-button" data-index="${i}">
+          <img src="${icon}" alt="Ícone">
+        </button>
         ${values[i].name}
-        <button id="bin" onclick="removeItem('${values[i].name}')">
-          <img src="assets/lixeira.svg">
+        <button class="delete-button" data-index="${i}">
+          <img src="assets/lixeira.svg" alt="Remover">
         </button>
       </li>`
+    }
+
+  applyClickBehavior()
+  applyDeleteBehavior()
   }
-}
 
-function removeItem(data) {
-  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]")
-  let index = values.findIndex(x => x.name == data)
+function applyClickBehavior() {
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
+  const buttons = document.querySelectorAll('.click-button')
 
-  if (index !== -1) {
-    values.splice(index, 1)
-    localStorage.setItem(localStorageKey, JSON.stringify(values))
-    showValues()
+    buttons.forEach(button => {
+    const index = button.getAttribute('data-index')
 
-    let footer = document.getElementById('footer')
-    footer.classList.add('show')
-
-    setTimeout(() => {
-      footer.classList.remove('show')
-    }, 3000)
+      button.addEventListener('click', function () {
+      values[index].checked = !values[index].checked
+      localStorage.setItem(localStorageKey, JSON.stringify(values))
+      showValues()
+    })
+  })
   }
-}
 
-showValues()
+function applyDeleteBehavior() {
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
+  const deleteButtons = document.querySelectorAll('.delete-button')
+
+  deleteButtons.forEach(button => {
+    const index = button.getAttribute('data-index')
+
+    button.addEventListener('click', function () {
+      if (values[index].checked) {
+        values.splice(index, 1)
+        localStorage.setItem(localStorageKey, JSON.stringify(values))
+        showValues()
+
+        let footer = document.getElementById('footer')
+        footer.classList.add('show')
+        setTimeout(() => {
+        footer.classList.remove('show')
+        }, 3000)
+      } else {
+        alert('Só é possível remover o item se ele estiver marcado!')
+      }
+    })
+  })
+}
 
 document.getElementById('scroll-to-top').addEventListener('click', function () {
   window.scrollTo({
-    top: 0,
-    behavior: 'smooth' // 👈 animação suave
+  top: 0,
+  behavior: 'smooth'
   })
 })
+showValues()

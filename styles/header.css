@@ -3,25 +3,25 @@ section {
   padding: 2rem; 
   display: inline-block;   
 }
- .topo {
+.topo {
   cursor: pointer;
  }
  
 header {
+
   & h1 {
-    font: var(--title);
+  font: var(--title);
   }
 
   .part-two {
-    display: grid;
-   margin-top: 3.5rem;
+  display: grid;
+  margin-top: 3.5rem;
    }
-}
+   }
 
 @media screen and (max-width: 24rem){
   header {  
   & .part-two {
-   margin-top: 1rem;
-     }}
-    
-}
+  margin-top: 1rem;
+  }}    
+  }
