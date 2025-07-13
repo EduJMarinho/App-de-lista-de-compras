@@ -61,6 +61,6 @@ body {
 /* Garante que mesmo em modo escuro, mantenha claro */
 @media (prefers-color-scheme: dark) {
   body {
-   background-color: var(--background-primary);      
+   background-color: #F4F5FB;;      
   }
 }
