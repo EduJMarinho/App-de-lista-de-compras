@@ -1,41 +1,36 @@
-💻 Sistema de Reembolso
+# 🛒 App de Lista de Compras
 
-Landing page desenvolvida como parte do projeto de portfólio e estudo de JavaScript por Eduardo José Marinho, aluno da plataforma Rocketseat.
+Aplicação desenvolvida como parte da formação **FullStack** na plataforma **Rocketseat**, com o objetivo de praticar lógica com **JavaScript** e estruturação com **HTML** e **CSS**. Este projeto permite ao usuário adicionar, visualizar e gerenciar itens em uma lista de compras de forma simples e funcional.
 
+🔗 [Acesse o projeto online](https://edujmarinho.github.io/App-de-lista-de-compras/)
 
+## 🎯 Objetivos
 
-📚 Propósito
+- Criar uma interface intuitiva para gerenciamento de compras  
+- Aplicar conceitos de **JavaScript** como manipulação de DOM e eventos  
+- Consolidar o aprendizado com um projeto funcional e útil  
 
-Este projeto representa um marco importante na minha jornada como desenvolvedor FullStack, focando em:
+## 🚀 Tecnologias Utilizadas
 
-Aplicação prática dos conhecimentos adquiridos no curso da Rocketseat
+- **HTML5** – Estrutura da página  
+- **CSS3** – Estilização e responsividade  
+- **JavaScript** – Lógica de adição, remoção e exibição de itens  
 
-Exploração de HTML, CSS e JavaScript
+## 🧠 Aprendizados
 
-Aprofundamento por meio de pesquisas complementares via Google, YouTube e apoio de ferramentas de IA
+- Criação de elementos dinâmicos com JavaScript  
+- Uso de eventos como `click` e `submit`  
+- Manipulação de arrays e objetos para armazenar dados  
+- Estilização com foco em clareza e usabilidade  
 
+## 🙋‍♂️ Autor
 
-🎯 Objetivos do Projeto
+Desenvolvido por **Eduardo José Marinho**, aluno da Rocketseat e entusiasta da tecnologia.  
+Este projeto representa mais um passo na jornada de aprendizado e evolução como desenvolvedor.
 
-Construir uma landing page de sistema de reembolso com layout intuitivo e objetivo
+> “Construir, errar, refatorar, aprender: esse é o caminho do Dev.” – Edu Marinho
 
-Oferecer uma experiência interativa e funcional ao usuário
+## 🙌 Agradecimento
 
-Consolidar o aprendizado por meio de um projeto real e relevante
-
-🚀 Tecnologias Utilizadas
-HTML
-
-CSS
-
-JavaScript
-
-🙋‍♂️ Sobre Mim
-
-Sou Eduardo José Marinho, apaixonado por tecnologia e pelo processo de aprender, errar, refatorar e evoluir. Este projeto é um reflexo do meu comprometimento com o crescimento constante e com a construção de soluções que façam sentido.
-
-“Construir, errar, refatorar, aprender: esse é o caminho do Dev.” – Edu Marinho
-
-🙌 Agradecimento
-
-Obrigado por visitar meu perfil. Deus te abençoe!
+Se você chegou até aqui, desejo **muita sorte na sua jornada** como dev.  
+**Jesus seja louvado! 🙏**
